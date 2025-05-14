@@ -39,7 +39,8 @@ public class Main {
 		  //1. add Book
 	            switch (choice) {
                 case 1:
-                    System.out.print("Enter title: ");
+                	System.out.println("Enter a new book to the database.");                   
+                	System.out.print("Enter title: ");
                     String title = scanner.nextLine();
                     System.out.print("Enter author: ");
                     String author = scanner.nextLine();
@@ -49,7 +50,7 @@ public class Main {
                     break;
 		   //2. remove Book
                 case 2:
-                    System.out.print("Enter ISBN to remove: ");
+                    System.out.print("Enter ISBN to remove from database: ");
                     library.removeBook(scanner.nextLine());
                     break;
 		   //3. display available book(s)
